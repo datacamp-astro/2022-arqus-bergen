@@ -1,6 +1,7 @@
 # Data
 
-This folder contains the datasets used for this paper.
+This folder contains the datasets used for this hands-on. The data are taken from the project Joint-Crab in which data from different experiments were combined. The projects resulted in the github space https://github.com/open-gamma-ray-astro/joint-crab and the publication Towards multi-instrument and reproducible gamma-ray analysis appeared in A&A 625, A10 (2019) DOI: 10.1051/0004-6361/201834938 ADS: 2019A%26A...625A..10N
+
 
 There are Crab observations from the Fermi-LAT gamma-ray space telescope,
 as well as from four ground-based gamma-ray telescopes (MAGIC, VERITAS, FACT, H.E.S.S.).
