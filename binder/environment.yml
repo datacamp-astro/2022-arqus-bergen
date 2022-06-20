@@ -1,10 +1,4 @@
 name: arqus_school_2022
 
 dependencies:
-  - python==3.7
-  - ipython==7.2.0
-  - jupyter==1.0.0
-  - numpy==1.15.4
-  - scipy==1.1.0
-  - matplotlib==3.0.2
-  - astropy==3.1
+  - python==3.9
