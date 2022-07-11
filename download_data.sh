@@ -2,14 +2,16 @@
 
 set -eo pipefail
 
-DATA_URL=${DATA_URL:-https://drive.google.com/drive/folders/1x3cfNL0McMeGHhkQ0yLB51dxaQXthT3J?usp=sharing}
+DATA_URL=${DATA_URL:-https://userswww.pd.infn.it/~mdoro/arqus/data}
 
 wget \
-	-R \
+	-R "index.html*,robots*"\
 	--no-host-directories --cut-dirs=1 \
 	--no-parent \
-	--user=arqus \
 	--no-verbose \
 	--recursive \
-	--directory-prefix=data \
+	--directory-prefix=. \
 	"$DATA_URL"
+
+mv arqus/data .
+rm -rf arqus
