@@ -1,0 +1,63 @@
+################################################################################
+#
+# Configuration file for executable magicDL3
+#
+################################################################################
+
+# I/O
+dl3.melibeaObsDir: /my_data/DATA/NGC1275/Ivana/IC310_flare/Melibea/offset_04
+dl3.melibeaMcDir:  /my_data/DATA/NGC1275/Ivana/DATA_RFs/RFs/ST_03_01/5_to_35_04offset/MC/melibea_mc
+dl3.outDir: /my_data/DATA/NGC1275/Ivana/IC310_flare/DL3/offset_04
+
+# irf components configuration
+dl3.singleOffset: true
+dl3.pointLike: true
+
+# dead time per event (for effective time calculation)
+dl3.deadTimePerEvent: 26.e-6
+
+# Zd range and Az bins
+dl3.nBinsAz: 1
+dl3.minZd: 12.
+dl3.maxZd: 26.
+
+# cuts applied on the MC events for the IRF computation
+dl3.minSize: 50.
+dl3.hadCut: 0.28
+dl3.theta2Cut: 0.02
+# probabilities corresponding to the quantiles of the hadronness and theta2 MC 
+# distributions used to determine the cuts
+# if not specified or set to 0., will use the fixed cuts specified above
+dl3.probHad: 0.90
+dl3.nBinsHad: 100
+dl3.hadCutRange: 0.15, 0.95
+dl3.probTheta2: 0.75
+flute.nBinsTheta2: 40
+flute.maxTheta2: 0.4
+dl3.theta2CutRange: 0.01, 0.075
+
+# energy binning for IRF computation
+dl3.nBinsEnergyEst: 28
+dl3.minEnergyEst: 5.
+dl3.maxEnergyEst: 50000.
+dl3.estTrueFactor: 0.7
+
+# rad2 binning, optional 
+# will be used only in case of a full-enclosure IRF to compute the PSF
+dl3.nBinsRad2 : 40
+dl3.rad2Max : 0.4
+
+# offset binning, in case of multi-offset IRFs
+dl3.nBinsOffset: 1
+dl3.minOffset: 0
+dl3.maxOffset: 1.5
+
+# assumed spectrum for IRFs computation
+#### THIS IS THE PWL FIT WHICH TURNED OUT TO BE THE BEST IN FOLD
+dl3.AssumedSpectrum: pow(x/300.,-1.71172)
+#dl3.AssumedSpectrum: pow(x/300.,-2.31-0.26*log10(x/300.))
+#epwl from the 2017 article - check in the article for whole STO0307
+#dl3.AssumedSpectrum: pow(x/300.,-2.11)*exp(-x/sqrt(500.)/sqrt(500.))
+
+# add optional columns GAMMANESS, DETX, DETY in the event list for technical studies
+dl3.optionalColumns: true
