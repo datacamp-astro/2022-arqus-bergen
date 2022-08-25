@@ -26,4 +26,4 @@ Data are stored locally at INFN servers. To download data, open a terminal and r
 ./download_data.sh
 ```
 
-The file `arqus_filelist.txt` also displays the structure of the data folder.
+The full dataset occupies only 18 MB of data at the moment, so no special storage requirements are needed. The file `arqus_filelist.txt` also displays the structure of the data folder.
