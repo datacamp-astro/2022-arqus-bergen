@@ -1,0 +1,17 @@
+# Data files
+
+# Corsika
+*.DAT*
+
+# XCDF
+*.xcd
+
+# general
+*.dat
+*.log
+*._DS_store
+
+## Cache files
+
+# Jupyter Notebooks
+**/.ipynb_checkpoints
