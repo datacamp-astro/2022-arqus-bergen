@@ -1,1 +1,0 @@
-print(observations_crab)
