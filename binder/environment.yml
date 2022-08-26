@@ -1,3 +1,8 @@
+# Conda environment for the arQus Twinning 2022 Norway
+# Install:    conda env create -f environment.yml
+# Activate:   conda activate arqus_school_2022
+# Deactivate: conda deactivate
+
 name: arqus_school_2022
 
 dependencies:
@@ -6,4 +11,3 @@ dependencies:
   - scipy>=1
   - astropy>=5
   - gammapy==0.20
-  - gammaALPs
