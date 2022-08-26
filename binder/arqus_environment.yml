@@ -1,0 +1,19 @@
+# Conda environment for the arQus Twinning Padova-Bergen 2022
+
+# Install:    conda env create -f arqus_environment.yml
+# Activate:   conda activate arqus
+# Deactivate: conda deactivate
+
+name: arqus
+
+
+#channels:
+#  - conda-forge
+#  - sherpa
+
+dependencies:
+  - python==3.9
+  - numpy>=1.2
+  - scipy>=1
+  - astropy>=5
+  - gammapy==0.20
