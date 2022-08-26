@@ -9,7 +9,7 @@
 # general
 *.dat
 *.log
-.DS_store
+*.DS_store
 
 ## Cache files
 
