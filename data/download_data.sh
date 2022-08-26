@@ -13,5 +13,5 @@ wget \
 	--directory-prefix=. \
 	"$DATA_URL"
 
-mv arqus/data .
-rm -rf arqus
+mv arqus/data/* .
+rm -rf arqus/data
