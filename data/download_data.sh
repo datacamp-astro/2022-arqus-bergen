@@ -14,4 +14,4 @@ wget \
 	"$DATA_URL"
 
 mv arqus/data/* .
-rm -rf arqus/data
+rm -rf arqus
