@@ -5,10 +5,16 @@
 
 name: arqus_school_2022
 
+channels:
+  - default
+  - conda-forge
+
 dependencies:
   - python==3.9
   - numpy>=1.2
   - scipy>=1
   - astropy>=5
   - matplotlib
+  - jupyter
+  - jupyterlab
   - gammapy==0.20
